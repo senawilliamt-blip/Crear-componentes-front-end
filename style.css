@@ -1,0 +1,62 @@
+/* From Uiverse.io by Gautammsharma */ 
+.grid-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+    linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+  background-size: 20px 30px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.card {
+  width: 700px;
+  height: 800px;
+  margin: 50px auto;
+  background: rgb(236, 236, 236);
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+  margin-top: 20px;
+  background-color: black;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 18px;
+  color: black;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  color: black;
+  margin-top: 20px;
+}
+
+img {
+  width: 30%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 20px;
+}
