@@ -1,0 +1,67 @@
+html {
+  /* margin-left: -7.81px; */
+  margin: -7.81px;
+}
+/* From Uiverse.io by chase2k25 */ 
+.grid-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #f8fafc;
+}
+
+.grid-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+    linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+  background-size: 20px 30px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+}
+.encrypted-neon-pattern {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0d0d1a, #1a1a2f 50%, #2a1a4f);
+  filter: url(#neon-texture);
+  position: absolute;
+}
+
+.data-stream-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 30% 40%,
+      rgba(0, 240, 255, 0.2) 0%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 70% 60%,
+      rgba(100, 50, 255, 0.15) 0%,
+      transparent 15%
+    );
+  animation: pulse-stream 3s ease-in-out infinite;
+}
+
+@keyframes pulse-stream {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
