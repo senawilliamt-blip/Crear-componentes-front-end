@@ -6,11 +6,46 @@
     <title>Hoja de vida</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-</header>
 <body>
-    <!-- From Uiverse.io by vikas7754 --> 
-    <div class="container"></div>
+<header>
+    <!-- From Uiverse.io by chase2k25 --> 
+    <div class="encrypted-neon-pattern">
+    <svg class="texture-filter">
+        <filter id="neon-texture">
+        <feTurbulence
+            result="noise"
+            numOctaves="2"
+            baseFrequency="0.6"
+            type="fractalNoise"
+        ></feTurbulence>
+        <feSpecularLighting
+            result="specular"
+            lighting-color="#008000"
+            specularExponent="25"
+            specularConstant="0.9"
+            surfaceScale="3"
+            in="noise"
+        >
+            <fePointLight z="90" y="100" x="100"></fePointLight>
+        </feSpecularLighting>
+        <feComposite
+            result="litNoise"
+            operator="over"
+            in2="SourceGraphic"
+            in="specular"
+        ></feComposite>
+        <feBlend mode="screen" in2="litNoise" in="SourceGraphic"></feBlend>
+        </filter>
+    </svg>
+</header>
+    <!-- From Uiverse.io by jaykdoe --> 
+    <div class="container">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div></div>
+    </div>
+    </div>
         <div class="card">
         <h3>Hoja  de vida</h3>
         <img src="Img/65c7005f8ef31.webp" alt=""> 
@@ -34,6 +69,37 @@
             <p>Soy un estudiante de Analisis y Desarrollo de Software con habilidades en programación, desarrollo web y análisis de datos. Me apasiona aprender nuevas tecnologías y aplicar mis conocimientos para resolver problemas complejos. Busco oportunidades para crecer profesionalmente y contribuir al éxito de la empresa.</p>
         </div>
  </div>
-
+<footer>
+    <!-- From Uiverse.io by chase2k25 --> 
+    <div class="encrypted-neon-pattern">
+    <svg class="texture-filter">
+        <filter id="neon-texture">
+        <feTurbulence
+            result="noise"
+            numOctaves="2"
+            baseFrequency="0.6"
+            type="fractalNoise"
+        ></feTurbulence>
+        <feSpecularLighting
+            result="specular"
+            lighting-color="#008000"
+            specularExponent="25"
+            specularConstant="0.9"
+            surfaceScale="3"
+            in="noise"
+        >
+            <fePointLight z="90" y="100" x="100"></fePointLight>
+        </feSpecularLighting>
+        <feComposite
+            result="litNoise"
+            operator="over"
+            in2="SourceGraphic"
+            in="specular"
+        ></feComposite>
+        <feBlend mode="screen" in2="litNoise" in="SourceGraphic"></feBlend>
+        </filter>
+    </svg>
+</footer>
 </body>
+
 </html>
